@@ -5,5 +5,5 @@ pub fn add(lhs: u32, rhs: u32) u32 {
 }
 
 test "add test" {
-    std.testing.expectEqual(4, add(1, 3));
+    try std.testing.expectEqual(@as(u32, 4), add(1, 3));
 }
